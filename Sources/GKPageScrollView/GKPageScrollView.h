@@ -165,6 +165,9 @@
 // 是否内部控制指示器的显示与隐藏（默认为NO）
 @property (nonatomic, assign, getter=isControlVerticalIndicator) BOOL controlVerticalIndicator;
 
+// 头部在底层
+@property (nonatomic, assign) BOOL headerUnderSurface;
+
 - (instancetype)initWithDelegate:(id <GKPageScrollViewDelegate>)delegate NS_DESIGNATED_INITIALIZER;
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;

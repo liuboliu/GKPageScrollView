@@ -463,6 +463,9 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     [self mainScrollViewDidScroll:scrollView];
+    if (self.headerUnderSurface) {
+        [self.mainTableView insertSubview:self.mainTableView.tableHeaderView atIndex:0];
+    }
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
